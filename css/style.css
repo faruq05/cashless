@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+}
+
+/* global variables starts=================== */
+:root {
+    --cs-primary: #42BEA6;
+    --cs-title: #303540;
+    --cs-text: #616B81;
+    --cs-bg: #f7f8fa;
+    --cs-iconbg: #f1fdfb;
+    --cs-subprimary: #fff;
+    --cs-button: #303540;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--cs-subprimary);
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2em;
+    color: var(--cs-title);
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.4px;
+    text-shadow: 0px 0px 10px rgb(0 0 0 / 50%);
+    color: var(--cs-subprimary);
+    line-height: 28px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cs-subprimary);
+}
+
+.c-60 {
+    padding: 60px 0px;
+}
+
+/* global variables ends=================== */
+
+/* header starts ============================*/
+.header {
+    background-color: #00000075;
+    position: absolute;
+    width: 100%;
+    transition: .3s all ease-in-out, .3s all ease-in-out;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--cs-subprimary);
+    padding: 0px;
+    padding: 5px 12px;
+    font-weight: 500;
+    transition: .2s all ease-in-out, .3s all ease-in-out;
+    font-size: 16px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: var(--cs-subprimary);
+    color: var(--cs-primary);
+    border-radius: 8px;
+}
+
+.divider {
+    color: #ffffffb7;
+    font-weight: 400;
+    padding: 0px 10px;
+}
+
+.header:hover {
+    background-color: var(--cs-primary);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {}
+
+/* header ends=============================== */
+
+/* hero starts=============================== */
+#hero {
+    background: url(../images/celebration-colorful-colourful-1684187-scaled.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* min-height: 70vh; */
+}
+
+.hero .hc-row{
+    min-height: 70vh;
+}
+
+.hero_content h5{
+    width: 90%;
+}
+
+.hero_card{
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -4px rgb(0 0 0 / 15%);
+}
+
+.hc_icon{
+    background-color: var(--cs-iconbg);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.hc_icon i{
+    font-size: 25px;
+    color: var(--cs-primary);
+}
+
+.hero_card p{
+    font-size: 13px;
+    color: var(--cs-title);
+    font-weight: 600;
+    margin-top: 20px;
+    text-align: center;
+}
