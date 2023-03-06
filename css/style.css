@@ -122,7 +122,9 @@ a{
     background-color: var(--cs-primary);
 }
 
-.navbar-light .navbar-nav .nav-link:hover {}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--cs-primary)!important;
+}
 
 /* offcanvas */
 .offcanvas.show {
