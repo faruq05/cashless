@@ -672,11 +672,15 @@ hr {
 
 .cc_link {
     display: flex;
-    width: 40%;
+    width: 70%;
     align-items: center;
     justify-content: space-around;
     margin: auto;
     padding-top: 20px;
+}
+
+.cc_linkeng{
+    width: 40%;
 }
 
 .cc_link li {}
@@ -684,6 +688,10 @@ hr {
 .cc_link li a {
     text-decoration: none;
     color: #c36;
+}
+
+.cc_link li a:hover{
+    color: var(--cs-title);
 }
 
 .foot_hr hr {
