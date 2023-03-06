@@ -147,6 +147,13 @@
 
 }
 
+@media(max-width:991px) {
+    .btn-canvas {
+
+        display: block;
+    }
+}
+
 @media(max-width:767px) {
     h1 {
         font-size: 28px;
@@ -303,10 +310,15 @@
         width: 60%;
     }
 
-    .cc_link{
+    .cc_link {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
+    }
+
+    .modal-dialog-scrollable .modal-body {
+        overflow-y: auto;
+        padding: 30px;
     }
 }
 
@@ -433,7 +445,8 @@
         justify-content: center;
     }
 
-    .cc_linkeng, .cc_link{
+    .cc_linkeng,
+    .cc_link {
         width: 100%;
         flex-wrap: wrap;
         text-align: center;

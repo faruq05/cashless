@@ -1,4 +1,4 @@
-* {
+jus {
     margin: 0px;
     padding: 0px;
     font-family: Montserrat, sans-serif;
@@ -81,6 +81,9 @@ hr {
     box-shadow: none;
 }
 
+a{
+    text-decoration: none;
+}
 /* global ends */
 
 /* header starts */
@@ -92,11 +95,11 @@ hr {
 }
 
 .navbar-nav {
-    align-items: center;
+    align-items: left;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: var(--cs-subprimary);
+    color: var(--cs-subprimary) !important;
     padding: 5px 12px;
     font-weight: 500;
     transition: all 0.2s ease-in-out 0s, all 0.3s ease-in-out 0s;
@@ -120,6 +123,77 @@ hr {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {}
+
+/* offcanvas */
+.offcanvas.show {
+    transform: none;
+    width: 80%;
+    max-height: 500px;
+    border-radius: 0px 0px 0px 20px;
+}
+
+.offcanvas-header {
+    justify-content: end;
+}
+
+.offcanvas-body {
+    flex-grow: 1;
+    padding: 10px 35px 0px 35px;
+    overflow-y: auto;
+}
+
+.navbar-nav .nav-link {
+    color: var(--cs-title) !important;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: left;
+}
+
+.btn-canvas {
+
+    background-color: var(--cs-subprimary);
+
+    border-radius: 50px;
+
+    color: var(--cs-primary) !important;
+
+    display: none;
+}
+
+.social_canvas {
+    margin-top: 15px;
+}
+
+.social_canvas hr {
+    width: 100%;
+    color: var(--cs-text);
+    height: 1px !important;
+}
+
+.canvas_socicon {
+
+display: flex;
+
+width: 70px;
+
+justify-content: space-between;
+
+margin-top: 20px;
+}
+
+.canvas_icon {
+    width: 30px;
+    height: 30px;
+    background-color: var(--cs-primary);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canvas_icon i {
+    color: var(--cs-subprimary);
+}
 
 /* header ends */
 
@@ -176,6 +250,7 @@ hr {
 
 .hero_card {
     background-color: rgb(255, 255, 255);
+    height: 160px;
     padding: 24px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 20px -4px;
@@ -404,7 +479,7 @@ hr {
     padding: 12px 0px;
 }
 
-.olist2{
+.olist2 {
     display: none;
 }
 
@@ -622,6 +697,7 @@ hr {
 
 .social_icon i {
     font-size: 20px;
+    color: var(--cs-title);
 }
 
 .lang {
@@ -677,7 +753,7 @@ hr {
     padding-top: 20px;
 }
 
-.cc_linkeng{
+.cc_linkeng {
     width: 40%;
 }
 
@@ -688,7 +764,7 @@ hr {
     color: #c36;
 }
 
-.cc_link li a:hover{
+.cc_link li a:hover {
     color: var(--cs-title);
 }
 
@@ -770,6 +846,7 @@ hr {
     border: 0;
     border-bottom: 1px solid var(--cs-title);
     border-radius: 0;
+    width: 100%;
 }
 
 .form-popup form textarea::placeholder {
@@ -827,18 +904,19 @@ hr {
     box-shadow: none;
     opacity: 1;
 }
+
 /* popup ends */
 
 /* .stick icon */
 
-.sticky_icon{
+.sticky_icon {
     position: fixed;
     top: 50%;
     right: 2%;
     transform: translateY(-50%);
 }
 
-.sticon{
+.sticon {
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -853,27 +931,27 @@ hr {
     box-shadow: 0px 0px 30px -3px rgb(0 0 0 / 20%);
 }
 
-.sticon svg{
+.sticon svg {
     width: 20px;
     height: 20px;
     fill: var(--cs-subprimary);
     transition: .2s all ease-in-out, .2s all ease-in-out;
 }
 
-.sticon:hover{
+.sticon:hover {
     background-color: var(--cs-subprimary);
 }
 
-.sticon:hover svg{
+.sticon:hover svg {
     fill: var(--cs-primary);
 }
 
-.sticon i{
+.sticon i {
     font-size: 16px;
     color: var(--cs-subprimary);
     transition: .2s all ease-in-out, .2s all ease-in-out;
 }
 
-.sticon:hover i{
+.sticon:hover i {
     color: var(--cs-primary);
 }
