@@ -694,15 +694,30 @@ hr {
 
 /* footer ends */
 
+.modal {
+    background-color: #000000a1;
+}
+
+.modal-dialog-scrollable .modal-content {
+    max-height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
 
 .modal-dialog-scrollable .modal-body {
     overflow-y: auto;
     padding: 50px 50px 70px 50px;
 }
 
-.modal.show .modal-dialog {
+.popup_width {
     transform: none;
     max-width: 640px;
+    height: auto;
+}
+
+.recalled_width {
+    transform: none;
+    max-width: 360px;
     height: auto;
 }
 
@@ -801,3 +816,58 @@ hr {
     float: right;
 }
 
+.btn-close:focus {
+    outline: 0;
+    box-shadow: none;
+    opacity: 1;
+}
+/* popup ends */
+
+/* .stick icon */
+
+.sticky_icon{
+    position: fixed;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+}
+
+.sticon{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cs-primary);
+    color: var(--cs-subprimary);
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+    box-shadow: 0px 0px 30px -3px rgb(0 0 0 / 20%);
+}
+
+.sticon svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--cs-subprimary);
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+}
+
+.sticon:hover{
+    background-color: var(--cs-subprimary);
+}
+
+.sticon:hover svg{
+    fill: var(--cs-primary);
+}
+
+.sticon i{
+    font-size: 16px;
+    color: var(--cs-subprimary);
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+}
+
+.sticon:hover i{
+    color: var(--cs-primary);
+}
