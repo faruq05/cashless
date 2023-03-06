@@ -1,0 +1,42 @@
+@media(max-width:320px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .hero_content h5 {
+        width: auto;
+        font-size: 16px;
+    }
+
+    .hero_content {
+        align-items: center;
+        text-align: center;
+        padding-top: 145px;
+    }
+
+    .hcard_row {
+        display: none;
+    }
+
+    .why, .solution{
+        padding: 60px 15px;
+
+    }
+
+    .why_content {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .why .col-md-4 {
+        padding: 0;
+    }
+
+    .why_card {
+        height: auto;
+    }
+}

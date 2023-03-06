@@ -129,7 +129,7 @@ hr {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: fade 20s infinite alternate-reverse;
+    animation: fade 10s infinite alternate-reverse;
     transition: all .5s ease-in-out;
     overflow: hidden;
 
