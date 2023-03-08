@@ -96,6 +96,12 @@ a{
 
 .navbar-nav {
     align-items: left;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-collapse{
+    display: flex;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -243,7 +249,7 @@ margin-top: 20px;
 } */
 
 .hero .hc-row {
-    min-height: 70vh;
+    min-height: 700px;
 }
 
 .hero_content h5 {
