@@ -101,6 +101,8 @@
         text-align: center;
         margin: 0px;
         margin-top: 20px;
+        width: 65%;
+        margin-left: auto;
     }
 
     .event_content {
@@ -148,10 +150,21 @@
 }
 
 @media(max-width:991px) {
+    .header {
+       
+        display: none;
+    }
     .btn-canvas {
 
-        display: block;
-    }
+display: block;
+
+position: absolute;
+
+right: 8px;
+
+top: 8px;
+
+}
 }
 
 @media(max-width:767px) {
@@ -374,7 +387,7 @@
 
     .btn-style2 {
         margin-left: 0;
-        margin-top: 15px;
+        margin-top: 0px;
     }
 
     .solution_image {
@@ -452,4 +465,11 @@
         text-align: center;
     }
 
+}
+
+@media(max-width:402px){
+    .btn-style2 {
+        margin-left: 0;
+        margin-top: 15px;
+    }
 }

@@ -24,16 +24,60 @@
 
 <body>
     <!-- header starts=================================================== -->
+    <button class="btn btn-canvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        <span><i class="fa-solid fa-bars"></i></span>
+    </button>
+    <!-- offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#why">Why choose cashless</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#offer">Our offers</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#event">Customer journey</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact
+                        us</a>
+                </li>
+                <div class="social_canvas">
+                    <hr>
+                    <div class="canvas_socicon">
+                        <div class="canvas_icon">
+                            <a href="https://www.facebook.com/PayinTechCashless" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
+
+                        </div>
+                        <div class="canvas_icon">
+                            <a href="https://www.linkedin.com/company/payintech/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </ul>
+
+        </div>
+    </div>
     <div class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand" href="#"><img width="180" height="180" src="images/cashless_logo.svg"
                         class="img-fluid" alt="cashless_logo"></a>
 
-                <button class="btn btn-canvas" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                    <span><i class="fa-solid fa-bars"></i></span>
-                </button>
+
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -69,51 +113,7 @@
                 </div>
             </div>
         </nav>
-        <!-- offcanvas -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#why">Why choose cashless</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#offer">Our offers</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#event">Customer journey</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact
-                            us</a>
-                    </li>
-                    <div class="social_canvas">
-                        <hr>
-                        <div class="canvas_socicon">
-                            <div class="canvas_icon">
-                                <a href="https://www.facebook.com/PayinTechCashless" target="_blank"><i
-                                        class="fa-brands fa-facebook-f"></i></a>
-
-                            </div>
-                            <div class="canvas_icon">
-                                <a href="https://www.linkedin.com/company/payintech/" target="_blank"><i
-                                        class="fa-brands fa-linkedin-in"></i></a>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </ul>
-
-            </div>
-        </div>
     </div>
     <!-- header end ======================================================= -->
 
@@ -219,7 +219,7 @@
                     </div>
                 </div>
                 <div class="col-md-4 p-0">
-                    <div class="hero_card">
+                    <div class="hero_card hcard3">
                         <div class="hc_icon">
                             <svg xmlns="http://www.w3.org/2000/svg" id="Ecommerce" viewBox="0 0 48 48">
                                 <g>
@@ -601,8 +601,10 @@
                                                             placeholder="Phone number" class="form-control">
                                                         <div class="fbtn2">
                                                             <button type="submit" class="submit-button"><i
-                                                                    class="fa-solid fa-phone"></i>To be
-                                                                recalled</button>
+                                                                    class="fa-solid fa-phone"></i>
+                                                                <a href="mailto:l.briand@cashless.fr">To be
+                                                                    recalled</a>
+                                                            </button>
                                                         </div>
                                                     </form>
                                                 </div>
@@ -1026,7 +1028,8 @@
                                                     cols="54" rows="4"></textarea>
                                                 <div class="fbtn2">
                                                     <button type="submit" class="submit-button"><i
-                                                            class="fa-solid fa-paper-plane"></i>Send</button>
+                                                            class="fa-solid fa-paper-plane"></i><a
+                                                            href="mailto:l.briand@cashless.fr">Send</a></button>
                                                 </div>
                                             </form>
                                         </div>
