@@ -29,50 +29,48 @@
         <span><i class="fa-solid fa-bars"></i></span>
     </button>
     <!-- offcanvas -->
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
-    aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-            aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-                <a class="nav-link" href="#why">Pourquoi choisir Cashless</a>
-            </li>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#why">Pourquoi choisir Cashless</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#offer">Nos offres</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#offer">Nos offres</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#event">Parcours simple et intuitif</a>
-            </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#event">Parcours simple et intuitif</a>
+                </li>
 
-            <li class="nav-item">
-                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Nous
-                    contacter</a>
-            </li>
-            <div class="social_canvas">
-                <hr>
-                <div class="canvas_socicon">
-                    <div class="canvas_icon">
-                        <a href="https://www.facebook.com/PayinTechCashless" target="_blank"><i
-                                class="fa-brands fa-facebook-f"></i></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Nous
+                        contacter</a>
+                </li>
+                <div class="social_canvas">
+                    <hr>
+                    <div class="canvas_socicon">
+                        <div class="canvas_icon">
+                            <a href="https://www.facebook.com/PayinTechCashless" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i></a>
 
+                        </div>
+                        <div class="canvas_icon">
+                            <a href="https://www.linkedin.com/company/payintech/" target="_blank"><i
+                                    class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
                     </div>
-                    <div class="canvas_icon">
-                        <a href="https://www.linkedin.com/company/payintech/" target="_blank"><i
-                                class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
+
                 </div>
 
-            </div>
+            </ul>
 
-        </ul>
-
+        </div>
     </div>
-</div>
     <div class="header">
         <nav class="navbar navbar-expand navbar-light">
             <div class="container">
@@ -113,7 +111,7 @@
                 </div>
             </div>
         </nav>
-        
+
     </div>
     <!-- header end ======================================================= -->
 
@@ -1022,10 +1020,20 @@
                                             <form action="" class="form-container">
                                                 <input type="text" id="name" class="form-control" placeholder="Nom & Prénom
                                                     " required>
-                                                <input type="email" id="email" class="form-control" placeholder="Votre E-mail
-                                                    " required>
+                                                <div class="contact_pop">
+                                                    <input type="email" id="email" class="form-control"
+                                                        placeholder="Votre E-mail" required>
+                                                    <input type="tel" id="phone" name="phone"
+                                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                                                        placeholder="votre numéro de téléphone" class="form-control">
+                                                </div>
                                                 <textarea name="message" id="message" placeholder="Votre Message
                                                 " cols="54" rows="4"></textarea>
+                                                <div class="acceptence">
+                                                    <input type="checkbox" id="accept-agreement-checkbox"
+                                                        name="accept-agreement" required>
+                                                    <label for="accept-agreement-checkbox"> En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande d'informations et de la relation commerciale qui peut en découler.</label>
+                                                </div>
                                                 <div class="fbtn2">
                                                     <button type="submit" class="submit-button"><i
                                                             class="fa-solid fa-paper-plane"></i>Envoyer</button>
@@ -1076,97 +1084,86 @@
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                 aria-labelledby="pills-home-tab">
                                 <div class="event">
-                                    <ul class="event_content">
-                                        <li>
+                                    <div class="event_content">
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 1
                                             </div>
-                                            <p>
-                                                Vous êtes contacté par notre service support
-                                            </p>
-                                        </li>
-                                        <li>
+                                            <h6>PRISE DE CONTACT</h6>
+                                            <p>Vous êtes contacté par notre service support</p>
+                                        </div>
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 2
                                             </div>
-                                            <p>
-                                                Vous accédez à votre espace pro pour découvrir nos tutos de prise en
-                                                main​
-                                            </p>
-                                        </li>
-                                        <li>
+                                            <h6>ESPACE PRO</h6>
+                                            <p>Vous accédez à votre espace pro pour découvrir nos tutos de prise en main​</p>
+                                        </div>
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 3
                                             </div>
-                                            <p>
-                                                Vous bénéficiez d’une session de formation personnalisée​
-                                            </p>
-                                        </li>
-                                        <li>
+                                            <h6>FORMATION</h6>
+                                            <p>Vous bénéficiez d’une session de formation personnalisée​​</p>
+                                        </div>
+                                        <div class="event_con_card">
                                             <div class="event_sl">
-                                                4
+                                               4
                                             </div>
-                                            <p>
-                                                Vous recevez le matériel (supports + terminaux) une semaine avant votre
-                                                évènement​
-                                            </p>
-                                        </li>
-                                    </ul>
+                                            <h6>EQUIPEMENT</h6>
+                                            <p>Vous recevez le matériel (supports + terminaux) une semaine avant votre évènement​​​</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                                 aria-labelledby="pills-profile-tab">
                                 <div class="event">
-                                    <ul class="event_content">
-                                        <li>
+                                    <div class="event_content">
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 1
                                             </div>
-                                            <p>
-                                                Installation des terminaux sur les lieux de rechargement et point de
-                                                consommation
-                                            </p>
-                                        </li>
-                                        <li>
+                                            <h6>INSTALLATION</h6>
+                                            <p>Installation des terminaux sur les lieux de rechargement et point de consommation</p>
+                                        </div>
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 2
                                             </div>
-                                            <p>
-                                                Les usagers utilisent la solution
-                                            </p>
-                                        </li>
-                                    </ul>
+                                            <h6>UTILISATION</h6>
+                                            <p>Les usagers utilisent la solution​</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-contact" role="tabpanel"
                                 aria-labelledby="pills-contact-tab">
                                 <div class="event">
-                                    <ul class="event_content">
-                                        <li>
+                                    <div class="event_content">
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 1
                                             </div>
-                                            <p>
-                                                Vous synchronisez l’ensemble des terminaux pour accéder au rapport
-                                                statistique de vos différents points de ventes
-                                            </p>
-                                        </li>
-                                        <li>
+                                            <h6>SYNCHRONISATION</h6>
+                                            <p>Vous synchronisez l’ensemble des terminaux pour accéder au rapport statistique de vos différents points de ventes</p>
+                                        </div>
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 2
                                             </div>
-                                            <p>
-                                                Vous renvoyez le matériel grâce au bon retour
-                                            </p>
-                                        </li>
-                                        <li>
+                                            <h6>RETOUR</h6>
+                                            <p>Vous renvoyez le matériel grâce au bon retour</p>
+                                        </div>
+                                        <div class="event_con_card">
                                             <div class="event_sl">
-                                                3
+                                                2
                                             </div>
-                                            <p>Vous êtes recontacté pour faire le bilan de votre édition
-                                            </p>
-                                        </li>
-                                    </ul>
+                                            <h6>DEBRIEF</h6>
+                                            <p>Vous êtes recontacté pour faire le bilan de votre éditionss</p>
+                                        </div>
+                                        
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1228,6 +1225,21 @@
                             <div class="col"><img src="images/Logo_TOSS_CMJN.png" class="img-fluid" alt=""></div>
                         </div>
 
+                    </div>
+                    <div class="col-md-12">
+                        <div class="partners">
+                            <div class="col"><img src="images/Logo-Guerre-du-Son-festival-1024x897.png"
+                                    class="img-fluid" alt=""></div>
+                            <div class="col"><img src="images/logo-noir-Rond-ASM-2020.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="images/Logo-Festival-des-Terres-Celtes-1024x1024.png" class="img-fluid"
+                                    alt="">
+                            </div>
+                            <div class="col">
+                                <img src="images/logo-magicm-1-min-1024x428.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

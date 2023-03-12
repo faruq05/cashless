@@ -1022,11 +1022,23 @@
                                             <form action="" class="form-container">
                                                 <input type="text" id="name" class="form-control"
                                                     placeholder="Name & Surname" required>
-                                                <input type="email" id="email" class="form-control"
-                                                    placeholder="Your E-mail" required>
+                                                <div class="contact_pop">
+                                                    <input type="email" id="email" class="form-control"
+                                                        placeholder="Your E-mail" required>
+                                                    <input type="tel" id="phone" name="phone"
+                                                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone number"
+                                                        class="form-control">
+                                                </div>
+
                                                 <textarea name="message" id="message" placeholder="Your Message"
                                                     cols="54" rows="4"></textarea>
+                                                    <div class="acceptence">
+                                                        <input type="checkbox" id="accept-agreement-checkbox"
+                                                            name="accept-agreement" required>
+                                                        <label for="accept-agreement-checkbox">By submitting this form, I accept that the information entered will be used as part of the request for information and the commercial relationship that may result.</label>
+                                                    </div>
                                                 <div class="fbtn2">
+                                                    
                                                     <button type="submit" class="submit-button"><i
                                                             class="fa-solid fa-paper-plane"></i><a
                                                             href="mailto:l.briand@cashless.fr">Send</a></button>
@@ -1076,8 +1088,37 @@
                             <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                 aria-labelledby="pills-home-tab">
                                 <div class="event">
-                                    <ul class="event_content">
-                                        <li>
+                                    <div class="event_content">
+                                        <div class="event_con_card">
+                                            <div class="event_sl">
+                                                1
+                                            </div>
+                                            <h6>CONTACT</h6>
+                                            <p>Your are contacted by our support department</p>
+                                        </div>
+                                        <div class="event_con_card">
+                                            <div class="event_sl">
+                                                2
+                                            </div>
+                                            <h6>ACCESS</h6>
+                                            <p>You access your professional space to discover our tutorials</p>
+                                        </div>
+                                        <div class="event_con_card">
+                                            <div class="event_sl">
+                                                3
+                                            </div>
+                                            <h6>TRAINING</h6>
+                                            <p>You benefit from a personalized training sessions</p>
+                                        </div>
+                                        <div class="event_con_card">
+                                            <div class="event_sl">
+                                                4
+                                            </div>
+                                            <h6>EQUIPMENT</h6>
+                                            <p>You receive the equipment (supports + terminals) one week before your
+                                                event</p>
+                                        </div>
+                                        <!-- <li>
                                             <div class="event_sl">
                                                 1
                                             </div>
@@ -1109,63 +1150,59 @@
                                                 You receive the equipment (supports + terminals) one week before your
                                                 event
                                             </p>
-                                        </li>
-                                    </ul>
+                                        </li> -->
+
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-profile" role="tabpanel"
                                 aria-labelledby="pills-profile-tab">
                                 <div class="event">
-                                    <ul class="event_content">
-                                        <li>
+                                    <div class="event_content">
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 1
                                             </div>
-                                            <p>
-                                                Installation of terminals at recharging points and consumption points
-                                            </p>
-                                        </li>
-                                        <li>
+                                            <h6>INSTALLATION</h6>
+                                            <p>Installation of terminals at recharging points and consumption points</p>
+                                        </div>
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 2
                                             </div>
-                                            <p>
-                                                Users use the solution
-                                            </p>
-                                        </li>
-                                    </ul>
+                                            <h6>USE</h6>
+                                            <p>Users use the solution</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="tab-pane fade" id="pills-contact" role="tabpanel"
                                 aria-labelledby="pills-contact-tab">
                                 <div class="event">
-                                    <ul class="event_content">
-                                        <li>
+                                    <div class="event_content">
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 1
                                             </div>
-                                            <p>
-                                                You synchronize all the terminals to access the statistical report of
-                                                your different points of sale
-                                            </p>
-                                        </li>
-                                        <li>
+                                            <h6>SYNCHRONIZE</h6>
+                                            <p>You synchronize all the terminals to access the statistical report of
+                                                your different points of sale</p>
+                                        </div>
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 2
                                             </div>
-                                            <p>
-                                                You return the material thanks to the good return
-                                            </p>
-                                        </li>
-                                        <li>
+                                            <h6>RETURN</h6>
+                                            <p>You return the material thanks to the good return</p>
+                                        </div>
+                                        <div class="event_con_card">
                                             <div class="event_sl">
                                                 3
                                             </div>
-                                            <p>You are contacted to take stock of your edition You return the material
-                                                thanks to the good return
-                                            </p>
-                                        </li>
-                                    </ul>
+                                            <h6>DEBRIEF</h6>
+                                            <p>You are contacted to take stock of your edition</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1227,6 +1264,21 @@
                             <div class="col"><img src="images/Logo_TOSS_CMJN.png" class="img-fluid" alt=""></div>
                         </div>
 
+                    </div>
+                    <div class="col-md-12">
+                        <div class="partners">
+                            <div class="col"><img src="images/Logo-Guerre-du-Son-festival-1024x897.png"
+                                    class="img-fluid" alt=""></div>
+                            <div class="col"><img src="images/logo-noir-Rond-ASM-2020.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="col">
+                                <img src="images/Logo-Festival-des-Terres-Celtes-1024x1024.png" class="img-fluid"
+                                    alt="">
+                            </div>
+                            <div class="col">
+                                <img src="images/logo-magicm-1-min-1024x428.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

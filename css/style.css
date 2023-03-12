@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: Montserrat, sans-serif;
@@ -81,9 +81,10 @@ hr {
     box-shadow: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 /* global ends */
 
 /* header starts */
@@ -100,7 +101,7 @@ a{
     align-items: center;
 }
 
-.navbar-collapse{
+.navbar-collapse {
     display: flex;
 }
 
@@ -129,7 +130,7 @@ a{
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-    color: var(--cs-primary)!important;
+    color: var(--cs-primary) !important;
 }
 
 /* offcanvas */
@@ -180,13 +181,13 @@ a{
 
 .canvas_socicon {
 
-display: flex;
+    display: flex;
 
-width: 70px;
+    width: 70px;
 
-justify-content: space-between;
+    justify-content: space-between;
 
-margin-top: 20px;
+    margin-top: 20px;
 }
 
 .canvas_icon {
@@ -295,11 +296,11 @@ margin-top: 20px;
     box-shadow: rgb(0 0 0 / 15%) 0px 0px 12px -4px;
 }
 
-.hcard3:hover{
+.hcard3:hover {
     border-radius: 10px;
 }
 
-.hcard3{
+.hcard3 {
     border-radius: 0px 10px 10px 0px;
 }
 
@@ -575,20 +576,23 @@ margin-top: 20px;
 }
 
 .event_sl {
-    font-size: 18px;
-    background-color: var(--cs-primary);
-    width: 40px;
-    height: 40px;
+    font-size: 20px;
+    background-color: #d8f6f1;
+    width: 45px;
+    height: 45px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    color: var(--cs-subprimary);
+    color: var(--cs-primary);
     margin: auto;
+    position: absolute;
+    top: -15px;
+    left: -15px;
 }
 
-.event_content li {
+/* .event_content li {
     text-align: center;
 }
 
@@ -596,6 +600,53 @@ margin-top: 20px;
     color: var(--cs-title);
     font-size: 18px;
     padding: 8px 0px 20px 0px;
+} */
+
+.event_con_card {
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    background-color: #F7F8FA;
+
+    padding: 40px;
+
+    position: relative;
+
+    width: 70%;
+
+    margin: auto;
+
+    margin-bottom: 35px !important;
+
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+}
+
+.event_con_card h6 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+}
+
+.event_con_card p {
+    font-size: 14px;
+    color: var(--cs-title);
+    transition: .2s all ease-in-out, .2s all ease-in-out;
+}
+
+.event_con_card:hover {
+    transform: scale(1.02);
+    background-color: var(--cs-primary);
+}
+
+.event_con_card:hover h6 {
+    color: #fff;
+}
+
+.event_con_card:hover p {
+    color: #fff;
 }
 
 #pills-tab {
@@ -868,11 +919,46 @@ margin-top: 20px;
     width: 100%;
 }
 
+.form-popup form textarea:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #0000003b;
+    outline: 0;
+    box-shadow: 0 0 0px 1px rgb(0 0 0 / 21%);
+}
+
 .form-popup form textarea::placeholder {
     color: var(--cs-text);
     font-size: 14px;
     font-style: italic;
     font-weight: 500;
+}
+
+.contact_pop {
+
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.acceptence {
+    display: flex;
+    align-items: baseline;
+    margin-top: 20px;
+}
+
+.acceptence input {}
+
+.acceptence label {
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.contact_pop input {
+    width: 48%;
 }
 
 .fbtn2 {
@@ -914,7 +1000,7 @@ margin-top: 20px;
     font-weight: 600;
 }
 
-.submit-button  a{
+.submit-button a {
     color: var(--cs-subprimary);
 }
 
