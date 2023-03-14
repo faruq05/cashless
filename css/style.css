@@ -93,12 +93,12 @@ a {
     position: absolute;
     width: 100%;
     transition: all 0.3s ease-in-out 0s, all 0.3s ease-in-out 0s;
+    z-index: 10;
 }
 
 .navbar-nav {
     align-items: left;
     display: flex;
-    align-items: center;
 }
 
 .navbar-collapse {
@@ -136,8 +136,8 @@ a {
 /* offcanvas */
 .offcanvas.show {
     transform: none;
-    width: 80%;
-    max-height: 500px;
+    width: 90%;
+    max-height: 430px;
     border-radius: 0px 0px 0px 20px;
 }
 
@@ -147,7 +147,7 @@ a {
 
 .offcanvas-body {
     flex-grow: 1;
-    padding: 10px 35px 0px 35px;
+    padding: 20px 30px 80px 50px;
     overflow-y: auto;
 }
 
@@ -209,16 +209,16 @@ a {
 /* hero starts */
 .hero {
     /* background: url("../images/celebration-colorful-colourful-1684187-scaled.jpg") center center / cover no-repeat; */
-    background-position: center center;
+    /* background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
-    animation: fade 10s infinite alternate-reverse;
-    transition: all .5s ease-in-out;
+    animation: fade  10s infinite alternate-reverse;
+    transition: all .5s ease-in-out; */
     overflow: hidden;
 
 }
 
-@keyframes fade {
+/* @keyframes fade {
     0% {
         background-image: url(../images/Aluna13-modif-1536x844-1.jpg);
 
@@ -233,7 +233,45 @@ a {
         background-image: url(../images/celebration-colorful-colourful-1684187-scaled.jpg);
 
     }
+} */
+
+.ken{
+    overflow: hidden;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
 }
+.ken-burns {
+    background: url('../images/Aluna13-modif-1536x844-1.jpg') center center no-repeat fixed;
+    animation: kenburns 30s ease-out infinite;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes kenburns {
+    0% {
+        transform: scale(1);
+        background-position: center center;
+        background-size: cover;
+        background-image: url(../images/celebration-colorful-colourful-1684187-scaled.jpg);
+    }
+    100% {
+        transform: scale(1.2);
+        background-position: center center;
+        background-size: cover;
+        background-image: url(../images/Le-Pommier-11-1536x1024-1.jpg);
+    }
+}
+
 
 /* @keyframes zoomout {
     0% {
@@ -265,10 +303,11 @@ a {
     padding: 24px 24px 24px 24px;
     background-color: #fff;
     border-radius: 10px 0px 0px 10px;
+    height: 155px;
 }
 
 .hero_card:hover {
-    transform: scale(1.05);
+    transform: scale(1.06);
     position: relative;
     z-index: 2;
     border-radius: 10px 10px 10px 10px;
@@ -341,14 +380,14 @@ a {
 
 .why_content {
     background-color: var(--cs-bg);
-    margin-top: 80px;
+    margin-top: 100px;
     padding: 80px 40px;
     border-radius: 25px;
 }
 
 .why_card {
     text-align: center;
-    padding: 30px 24px;
+    padding: 30px 24px 30px 24px;
     background-color: var(--cs-subprimary);
     border-radius: 10px;
     height: 225px;
@@ -367,6 +406,14 @@ a {
 
 .why_card:hover p {
     color: var(--cs-subprimary);
+}
+
+.whycol2{
+    display: none;
+}
+
+.whycol_discover{
+    display: block;
 }
 
 .wc_icon {}
@@ -704,12 +751,16 @@ a {
 .partners {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 40px 0px;
 }
 
+.pcol{
+    text-align: center;
+}
+
 .partners img {
-    width: 50%;
+    width: 80%;
     height: 100px;
     object-fit: contain;
     transition: .1s all ease-in-out;
@@ -822,7 +873,7 @@ a {
 
 .cc_link {
     display: flex;
-    width: 70%;
+    width: 85%;
     align-items: center;
     justify-content: space-around;
     margin: auto;
@@ -1070,3 +1121,4 @@ a {
 .sticon:hover i {
     color: var(--cs-primary);
 }
+
