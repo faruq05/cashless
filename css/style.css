@@ -258,24 +258,27 @@ a {
 }
 
 .hero_card {
-    background-color: rgb(255, 255, 255);
-    height: 160px;
-    padding: 24px;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #F1F6F5;
+    transition: .1s all ease-in-out, .1s all ease-in-out;
+    padding: 24px 24px 24px 24px;
+    background-color: #fff;
     border-radius: 10px 0px 0px 10px;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 20px -4px;
-    border-style: none;
-    transition: all 0.2s ease-in-out 0s, all 0.2s ease-in-out 0s;
 }
 
 .hero_card:hover {
     transform: scale(1.05);
     position: relative;
     z-index: 2;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.15);
 }
 
 .hcard_row {
     margin-top: -160px;
+    box-shadow: 0px 0px 20px -4px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
 }
 
 .hc_icon {
@@ -290,10 +293,13 @@ a {
 }
 
 .hcard2 {
-    position: relative;
-    z-index: 1;
-    border-radius: 0;
-    box-shadow: rgb(0 0 0 / 15%) 0px 0px 12px -4px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 0px 1px 0px 0px;
+    border-color: #F1F6F5;
+    transition: .1s all ease-in-out, .1s all ease-in-out;
+    padding: 24px 24px 24px 24px;
+    border-radius: 0;   
 }
 
 .hcard3:hover {
