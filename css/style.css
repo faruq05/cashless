@@ -208,12 +208,6 @@ a {
 
 /* hero starts */
 .hero {
-    /* background: url("../images/celebration-colorful-colourful-1684187-scaled.jpg") center center / cover no-repeat; */
-    /* background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    animation: fade  10s infinite alternate-reverse;
-    transition: all .5s ease-in-out; */
     overflow: hidden;
 
 }
@@ -245,9 +239,23 @@ a {
     z-index: -1;
 }
 
+.image1 {
+    background-image: url(../images/celebration-colorful-colourful-1684187-scaled.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.image2 {
+    background-image: url(../images/Le-Pommier-11-1536x1024-1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .ken-burns {
-    background: url('../images/Aluna13-modif-1536x844-1.jpg') center center no-repeat fixed;
-    animation: kenburns 30s ease-out infinite;
+    background: url(../images/Aluna13-modif-1536x844-1.jpg);
+    animation: fadeIn 20s ease-in-out infinite;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -258,41 +266,22 @@ a {
     z-index: -1;
 }
 
-@keyframes kenburns {
+@keyframes fadeIn {
     0% {
-        transform: scale(1.2);
-        background-position: center center;
-        background-size: cover;
+        opacity: 1;
         background-image: url(../images/celebration-colorful-colourful-1684187-scaled.jpg);
     }
 
-    100% {
-        transform: scale(1.1);
-        background-position: center center;
-        background-size: cover;
+    50% {
+        opacity: 0.8;
         background-image: url(../images/Le-Pommier-11-1536x1024-1.jpg);
     }
 
-    /* 100% {
-        transform: scale(1);
-       opacity: 0;
-    } */
-}
-
-
-/* @keyframes zoomout {
-    0% {
-        
-    }
-
-    50% {
-        transform: scale(0.67);
-    }
-
     100% {
-        transform: scale(1);
+        opacity: 1;
+        background-image: url(../images/Aluna13-modif-1536x844-1.jpg);
     }
-} */
+}
 
 .hero .hc-row {
     min-height: 700px;
@@ -549,9 +538,10 @@ a {
     padding: 100px;
 }
 
-.offer_title{
+.offer_title {
     margin-bottom: 30px;
 }
+
 /* .offer .container-fluid{
     width: 1700px;
 } */
@@ -639,10 +629,10 @@ a {
     border-radius: 5px;
     box-shadow: 0px 0px 10px 0px rgb(0, 0, 0, 0.2);
     margin: auto;
-    margin-bottom: 36px!important;
+    margin-bottom: 36px !important;
 }
 
-.mode_online{
+.mode_online {
     background-color: var(--cs-primary);
 }
 
