@@ -259,17 +259,21 @@ a {
 
 @keyframes kenburns {
     0% {
-        transform: scale(1);
+        transform: scale(1.2);
         background-position: center center;
         background-size: cover;
         background-image: url(../images/celebration-colorful-colourful-1684187-scaled.jpg);
     }
     100% {
-        transform: scale(1.2);
+        transform: scale(1.1);
         background-position: center center;
         background-size: cover;
         background-image: url(../images/Le-Pommier-11-1536x1024-1.jpg);
     }
+    /* 100% {
+        transform: scale(1);
+       opacity: 0;
+    } */
 }
 
 

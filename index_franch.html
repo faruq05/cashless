@@ -606,12 +606,12 @@
                                                         <h2>Être rappelé</h2>
                                                         <p>DANS LES MEILLEURS DÉLAIS</p>
                                                     </div>
-                                                    <form action="" class="form-container">
-                                                        <input type="text" id="name" class="form-control" placeholder="Nom & Prénom
+                                                    <form method="post" action="php/newsletter.php" class="form-container">
+                                                        <input type="text" id="name" name="name" class="form-control" placeholder="Nom & Prénom
                                                             " required>
                                                         <input type="tel" id="phone" name="phone"
                                                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Votre Téléphone
-                                                            " class="form-control">
+                                                            " class="form-control" required>
                                                         <div class="fbtn2">
                                                             <button type="submit" class="submit-button"><i
                                                                     class="fa-solid fa-phone"></i>Être rappelé</button>
@@ -1029,22 +1029,22 @@
                                                 <h2>Nous contacter</h2>
                                                 <p>DEMANDER UN DEVIS</p>
                                             </div>
-                                            <form action="" class="form-container">
-                                                <input type="text" id="name" class="form-control" placeholder="Nom & Prénom
+                                            <form method="post" action="php/newsletter.php" class="form-container">
+                                                <input type="text" id="name" name="name" class="form-control" placeholder="Nom & Prénom
                                                     " required>
                                                 <div class="contact_pop">
-                                                    <input type="email" id="email" class="form-control"
+                                                    <input type="email" id="email" name="email" class="form-control"
                                                         placeholder="Votre E-mail" required>
                                                     <input type="tel" id="phone" name="phone"
                                                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                                        placeholder="votre numéro de téléphone" class="form-control">
+                                                        placeholder="votre numéro de téléphone" class="form-control" required>
                                                 </div>
                                                 <textarea name="message" id="message" placeholder="Votre Message
-                                                " cols="54" rows="4"></textarea>
+                                                " cols="54" rows="4" required></textarea>
                                                 <div class="acceptence">
                                                     <input type="checkbox" id="accept-agreement-checkbox"
-                                                        name="accept-agreement" required>
-                                                    <label for="accept-agreement-checkbox"> En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande d'informations et de la relation commerciale qui peut en découler.</label>
+                                                        name="accept" required>
+                                                    <label for="accept-checkbox"> En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande d'informations et de la relation commerciale qui peut en découler.</label>
                                                 </div>
                                                 <div class="fbtn2">
                                                     <button type="submit" class="submit-button"><i
@@ -1368,8 +1368,8 @@
                     <div class="footer_content">
                         <h3>Nous suivre</h3>
                         <ul class="footer_links">
-                            <form action="">
-                                <input type="email" placeholder="Email" class="form-control" required>
+                            <form method="post" action="php/newsletter.php">
+                                <input type="email" placeholder="Email" name="name" class="form-control" required>
                                 <input type="submit" value="Envoyer">
                             </form>
                         </ul>
